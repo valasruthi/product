@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="example-button-row">
+        <button mat-button color="primary">Chat</button>
+        <button mat-button color="accent">Update Idea</button>
+        <button mat-button color="warn">Delete</button>
+        <button mat-button>Search Service Provider</button>
+      </div>
+      <section>
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Project Title" />
+          </mat-form-field>
+
+          <mat-form-field>
+            <textarea matInput placeholder="Project Description"></textarea>
+          </mat-form-field>
+        </div>
+          <h4>Selected Team : </h4>
+      </section>
+      <section id="team" class="pb-5">
+        <div class="container">
+          <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p>
+                      <img
+                        class=" img-fluid"
+                        src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png"
+                        alt="card image"
+                      />
+                    </p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">
+                      This is basic card with image on top, title, description
+                      and button.
+                    </p>
+                
+                    <button type="button" class="btn btn-danger">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p>
+                      <img
+                        class=" img-fluid"
+                        src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png"
+                        alt="card image"
+                      />
+                    </p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">
+                      This is basic card with image on top, title, description
+                      and button.
+                    </p>
+                    <button type="button" class="btn btn-danger">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4" *ngIf="isLoaded">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p>
+                      <img
+                        class=" img-fluid"
+                        src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png"
+                        alt="card image"
+                      />
+                    </p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">
+                      This is basic card with image on top, title, description
+                      and button.
+                    </p>
+                    <button type="button" class="btn btn-danger" (click)="removeTab()">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4" >
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p>
+                      <img
+                        class=" img-fluid"
+                        src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg"
+                        alt="card image"
+                      />
+                    </p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">
+                      This is basic card with image on top, title, description
+                      and button.
+                    </p>
+                    <button type="button" class="btn btn-danger">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p>
+                      <img
+                        class=" img-fluid"
+                        src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png"
+                        alt="card image"
+                      />
+                    </p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">
+                      This is basic card with image on top, title, description
+                      and button.
+                    </p>
+                    <button type="button" class="btn btn-danger">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p>
+                      <img
+                        class=" img-fluid"
+                        src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg"
+                        alt="card image"
+                      />
+                    </p>
+                    <h4 class="card-title">Sunlimetech</h4>
+                    <p class="card-text">
+                      This is basic card with image on top, title, description
+                      and button.
+                    </p>
+                    <button type="button" class="btn btn-danger">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ./Team member -->
+          </div>
+        </div>
+      </section><br>
+      <!-- Team -->
+    <h4>Applied Service Providers : </h4><br>
+    <section id="team" class="pb-5">
+            <div class="container">
+              <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p>
+                          <img
+                            class=" img-fluid"
+                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png"
+                            alt="card image"
+                          />
+                        </p>
+                        <h4 class="card-title">Sunlimetech</h4>
+                        <p class="card-text">
+                          This is basic card with image on top, title, description
+                          and button.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                          Accept
+                        </button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p>
+                          <img
+                            class=" img-fluid"
+                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png"
+                            alt="card image"
+                          />
+                        </p>
+                        <h4 class="card-title">Sunlimetech</h4>
+                        <p class="card-text">
+                          This is basic card with image on top, title, description
+                          and button.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                          Accept
+                        </button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p>
+                          <img
+                            class=" img-fluid"
+                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png"
+                            alt="card image"
+                          />
+                        </p>
+                        <h4 class="card-title">Sunlimetech</h4>
+                        <p class="card-text">
+                          This is basic card with image on top, title, description
+                          and button.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                          Accept
+                        </button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p>
+                          <img
+                            class=" img-fluid"
+                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg"
+                            alt="card image"
+                          />
+                        </p>
+                        <h4 class="card-title">Sunlimetech</h4>
+                        <p class="card-text">
+                          This is basic card with image on top, title, description
+                          and button.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                          Accept
+                        </button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p>
+                          <img
+                            class=" img-fluid"
+                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png"
+                            alt="card image"
+                          />
+                        </p>
+                        <h4 class="card-title">Sunlimetech</h4>
+                        <p class="card-text">
+                          This is basic card with image on top, title, description
+                          and button.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                          Accept
+                        </button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="frontside">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <p>
+                          <img
+                            class=" img-fluid"
+                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg"
+                            alt="card image"
+                          />
+                        </p>
+                        <h4 class="card-title">Sunlimetech</h4>
+                        <p class="card-text">
+                          This is basic card with image on top, title, description
+                          and button.
+                        </p>
+                        <button type="button" class="btn btn-success">
+                          Accept
+                        </button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+              </div>
+            </div>
+          </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

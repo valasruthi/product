@@ -1,0 +1,168 @@
+button {
+  margin-right: 10px;
+  margin-top: 50px;
+  color: black;
+  background-color: white;
+}
+body {
+  background-color: white;
+  width: 100%;
+}
+.formtext {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  float: right;
+}
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container {
+  width: 300px;
+  margin-top: 50px;
+}
+.example-card {
+  max-width: 150px;
+}
+
+/* equal card height */
+.row-equal > div[class*="col-"] {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.row-equal .card {
+  width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner > .row-equal.active,
+.carousel-inner > .row-equal.next,
+.carousel-inner > .row-equal.prev {
+  display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner > .row-equal.active.left,
+.carousel-inner > .row-equal.active.right {
+  opacity: 0.5;
+  display: flex;
+}
+
+/* control image height */
+.card-img-top-250 {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+/* FontAwesome for working BootSnippet :> */
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+#team {
+  background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #108d6f;
+  border-color: #108d6f;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007b5e;
+  border-color: #007b5e;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#team .card {
+  border: none;
+  background: #ffffff;
+}
+
+.image-flip:hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: 0.25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.frontside {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.frontside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.frontside .card {
+  min-height: 312px;
+}
+
+
+.frontside .card .card-title {
+  color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
